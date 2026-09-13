@@ -8,7 +8,7 @@
 2. [Task 2 - Hello, API](Task2.py)  
    Create a basic FastAPI app with a root endpoint and a `/greet/{name}` endpoint, then test both using the `/docs` page.
 
-3. **Task 3 - Model the Data**  
+3. [Task 3 - Model the Data](Task3.py)  
    Create `UserCreate` and `UserOut` Pydantic models, validate the email and password, and make sure the password is never returned.
 
 4. **Task 4 - Filter and Paginate**  
@@ -38,3 +38,7 @@
 ## Task 2 Docs Note
 
 The `/docs` page shows both `GET /` and `GET /greet/{name}`. It also lets me test the endpoints directly and shows the JSON response returned by each one.
+
+## Task 3 Note
+
+The password is included in `UserCreate` because the user sends it when creating an account. It is not included in `UserOut` so the password is never returned in API responses.
