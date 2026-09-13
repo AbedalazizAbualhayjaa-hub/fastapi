@@ -2,26 +2,6 @@
 
 This repository contains my solutions for the FastAPI training tasks from the training guide.
 
-## Setup
-
-Install FastAPI with:
-
-```bash
-pip install "fastapi[standard]"
-```
-
-To run a FastAPI file:
-
-```bash
-fastapi dev filename.py
-```
-
-The API can then be tested from:
-
-```text
-http://127.0.0.1:8000/docs
-```
-
 ## Tasks
 
 1. [Task 1 - Design the Contract](Task1.md)  
