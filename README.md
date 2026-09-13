@@ -14,7 +14,7 @@
 4. [Task 4 - Filter and Paginate](Task4.py)  
    Create a `GET /posts` endpoint with optional `published`, `limit`, and `offset` query parameters.
 
-5. **Task 5 - Build CRUD for Users**  
+5. [Task 5 - Build CRUD for Users](Task5.py)  
    Build create, list, get, update, and delete endpoints for users with the correct status codes.
 
 6. **Task 6 - A Shared Dependency**  
@@ -51,3 +51,12 @@ The password is included in `UserCreate` because the user sends it when creating
 - `/posts?published=false&limit=1&offset=0`
 
 Sending a value such as `/posts?limit=abc` returns a validation error because `limit` must be an integer.
+
+## Task 5 Test Log
+
+- `POST /users` returns `201 Created` and creates a user.
+- `GET /users` returns `200 OK` and lists the users.
+- `GET /users/1` returns `200 OK` when the user exists.
+- `PUT /users/1` returns `200 OK` and updates the user.
+- `DELETE /users/1` returns `204 No Content` and deletes the user.
+- Requesting a missing user returns `404 Not Found`.
