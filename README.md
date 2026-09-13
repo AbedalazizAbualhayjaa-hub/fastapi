@@ -1,13 +1,33 @@
 # FastAPI Training Tasks
 
-This repository contains my solutions for the FastAPI training tasks.
+This repository contains my solutions for the FastAPI training tasks from the training guide.
+
+## Setup
+
+Install FastAPI with:
+
+```bash
+pip install "fastapi[standard]"
+```
+
+To run a FastAPI file:
+
+```bash
+fastapi dev filename.py
+```
+
+The API can then be tested from:
+
+```text
+http://127.0.0.1:8000/docs
+```
 
 ## Tasks
 
-1. **Task 1 - Design the Contract**  
+1. [Task 1 - Design the Contract](Task1.md)  
    Design REST endpoints for comments on a post, including the method, URL, and success status code.
 
-2. **Task 2 - Hello, API**  
+2. [Task 2 - Hello, API](Task2.py)  
    Create a basic FastAPI app with a root endpoint and a `/greet/{name}` endpoint, then test both using the `/docs` page.
 
 3. **Task 3 - Model the Data**  
@@ -37,6 +57,6 @@ This repository contains my solutions for the FastAPI training tasks.
 11. **Task 11 - A Complete Blog API**  
     Build a complete FastAPI blog API with users, posts, comments, validation, database support, authentication, error handling, testing, and documentation.
 
-## Repository Structure
+## Task 2 Docs Note
 
-Each task is kept simple and separate. The solution file for each task can be opened directly from the main repository page.
+The `/docs` page shows both `GET /` and `GET /greet/{name}`. It also lets me test the endpoints directly and shows the JSON response returned by each one.
