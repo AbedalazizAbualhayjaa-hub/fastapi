@@ -6,4 +6,3 @@
 | Add a comment to a post | POST | `/posts/{post_id}/comments` | 201 Created |
 | Get one comment | GET | `/posts/{post_id}/comments/{comment_id}` | 200 OK |
 | Delete one comment | DELETE | `/posts/{post_id}/comments/{comment_id}` | 204 No Content |
-
