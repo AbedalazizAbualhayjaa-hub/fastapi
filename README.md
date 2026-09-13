@@ -20,7 +20,7 @@
 6. [Task 6 - A Shared Dependency](Task6.py)  
    Create a reusable pagination dependency and use it in two endpoints.
 
-7. **Task 7 - Persist for Real**  
+7. [Task 7 - Persist for Real](Task7.py)  
    Connect the posts API to a SQLite database using SQLAlchemy and make sure the data remains after restarting the server.
 
 8. **Task 8 - Meaningful Failures**  
@@ -60,3 +60,7 @@ Sending a value such as `/posts?limit=abc` returns a validation error because `l
 - `PUT /users/1` returns `200 OK` and updates the user.
 - `DELETE /users/1` returns `204 No Content` and deletes the user.
 - Requesting a missing user returns `404 Not Found`.
+
+## Task 7 Check
+
+The data is stored in `task7.db`, so it remains after restarting the server. SQL logging is enabled with `echo=True`. The posts list uses `selectinload` to load authors without running one extra query for every post.
