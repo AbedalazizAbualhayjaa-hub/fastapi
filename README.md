@@ -17,7 +17,7 @@
 5. [Task 5 - Build CRUD for Users](Task5.py)  
    Build create, list, get, update, and delete endpoints for users with the correct status codes.
 
-6. **Task 6 - A Shared Dependency**  
+6. [Task 6 - A Shared Dependency](Task6.py)  
    Create a reusable pagination dependency and use it in two endpoints.
 
 7. **Task 7 - Persist for Real**  
