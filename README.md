@@ -11,7 +11,7 @@
 3. [Task 3 - Model the Data](Task3.py)  
    Create `UserCreate` and `UserOut` Pydantic models, validate the email and password, and make sure the password is never returned.
 
-4. **Task 4 - Filter and Paginate**  
+4. [Task 4 - Filter and Paginate](Task4.py)  
    Create a `GET /posts` endpoint with optional `published`, `limit`, and `offset` query parameters.
 
 5. **Task 5 - Build CRUD for Users**  
@@ -42,3 +42,12 @@ The `/docs` page shows both `GET /` and `GET /greet/{name}`. It also lets me tes
 ## Task 3 Note
 
 The password is included in `UserCreate` because the user sends it when creating an account. It is not included in `UserOut` so the password is never returned in API responses.
+
+## Task 4 Examples
+
+- `/posts`
+- `/posts?published=true`
+- `/posts?limit=2&offset=1`
+- `/posts?published=false&limit=1&offset=0`
+
+Sending a value such as `/posts?limit=abc` returns a validation error because `limit` must be an integer.
