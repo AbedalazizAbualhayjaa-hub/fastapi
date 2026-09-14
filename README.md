@@ -29,7 +29,7 @@
 9. [Task 9 - Protect an Endpoint](Task9.py)  
    Add token protection to create, update, and delete endpoints while keeping read endpoints public.
 
-10. **Task 10 - Test the Contract**  
+10. [Task 10 - Test the Contract](Task10.py)  
     Write pytest tests for successful creation, missing posts, invalid input, and reading a created post.
 
 11. **Task 11 - A Complete Blog API**  
@@ -86,3 +86,10 @@ Duplicate email:
 ## Task 9 Check
 
 `GET /posts` and `GET /posts/{post_id}` are public. `POST`, `PUT`, and `DELETE` require the header `Authorization: Bearer secret-token`. Without the token, the API returns `401 Unauthorized`.
+
+## Task 10 Pytest Output
+
+```text
+....                                                                     [100%]
+4 passed
+```
