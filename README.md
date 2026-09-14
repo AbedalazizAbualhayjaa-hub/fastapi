@@ -23,7 +23,7 @@
 7. [Task 7 - Persist for Real](Task7.py)  
    Connect the posts API to a SQLite database using SQLAlchemy and make sure the data remains after restarting the server.
 
-8. **Task 8 - Meaningful Failures**  
+8. [Task 8 - Meaningful Failures](Task8.py)  
    Add proper error handling for missing users and duplicate emails.
 
 9. **Task 9 - Protect an Endpoint**  
@@ -64,3 +64,21 @@ Sending a value such as `/posts?limit=abc` returns a validation error because `l
 ## Task 7 Check
 
 The data is stored in `task7.db`, so it remains after restarting the server. SQL logging is enabled with `echo=True`. The posts list uses `selectinload` to load authors without running one extra query for every post.
+
+## Task 8 Error Responses
+
+Missing user:
+
+```json
+{
+  "detail": "User not found"
+}
+```
+
+Duplicate email:
+
+```json
+{
+  "detail": "Email already exists"
+}
+```
