@@ -32,7 +32,7 @@
 10. [Task 10 - Test the Contract](Task10.py)  
     Write pytest tests for successful creation, missing posts, invalid input, and reading a created post.
 
-11. **Task 11 - A Complete Blog API**  
+11. [Task 11 - A Complete Blog API](Task11/README.md)  
     Build a complete FastAPI blog API with users, posts, comments, validation, database support, authentication, error handling, testing, and documentation.
 
 ## Task 2 Docs Note
