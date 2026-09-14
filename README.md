@@ -2,31 +2,31 @@
 
 ## Tasks
 
-1. [Task 1 - Design the Contract](Task1.md)  
+1. [Task 1 - Design the Contract](Task01.md)  
    Design REST endpoints for comments on a post, including the method, URL, and success status code.
 
-2. [Task 2 - Hello, API](Task2.py)  
+2. [Task 2 - Hello, API](Task02.py)  
    Create a basic FastAPI app with a root endpoint and a `/greet/{name}` endpoint, then test both using the `/docs` page.
 
-3. [Task 3 - Model the Data](Task3.py)  
+3. [Task 3 - Model the Data](Task03.py)  
    Create `UserCreate` and `UserOut` Pydantic models, validate the email and password, and make sure the password is never returned.
 
-4. [Task 4 - Filter and Paginate](Task4.py)  
+4. [Task 4 - Filter and Paginate](Task04.py)  
    Create a `GET /posts` endpoint with optional `published`, `limit`, and `offset` query parameters.
 
-5. [Task 5 - Build CRUD for Users](Task5.py)  
+5. [Task 5 - Build CRUD for Users](Task05.py)  
    Build create, list, get, update, and delete endpoints for users with the correct status codes.
 
-6. [Task 6 - A Shared Dependency](Task6.py)  
+6. [Task 6 - A Shared Dependency](Task06.py)  
    Create a reusable pagination dependency and use it in two endpoints.
 
-7. [Task 7 - Persist for Real](Task7.py)  
+7. [Task 7 - Persist for Real](Task07.py)  
    Connect the posts API to a SQLite database using SQLAlchemy and make sure the data remains after restarting the server.
 
-8. [Task 8 - Meaningful Failures](Task8.py)  
+8. [Task 8 - Meaningful Failures](Task08.py)  
    Add proper error handling for missing users and duplicate emails.
 
-9. [Task 9 - Protect an Endpoint](Task9.py)  
+9. [Task 9 - Protect an Endpoint](Task09.py)  
    Add token protection to create, update, and delete endpoints while keeping read endpoints public.
 
 10. [Task 10 - Test the Contract](Task10.py)  
