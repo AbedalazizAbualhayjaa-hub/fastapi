@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException, status
-from pydantic import BaseModel, EmailStr
+from pydantic import BaseModel, EmailStr, Field
 
 app = FastAPI()
 
@@ -7,6 +7,7 @@ app = FastAPI()
 class UserCreate(BaseModel):
     name: str
     email: EmailStr
+    password: str = Field(min_length=8)
 
 
 class UserOut(BaseModel):
