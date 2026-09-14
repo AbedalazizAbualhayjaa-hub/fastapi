@@ -26,7 +26,7 @@
 8. [Task 8 - Meaningful Failures](Task8.py)  
    Add proper error handling for missing users and duplicate emails.
 
-9. **Task 9 - Protect an Endpoint**  
+9. [Task 9 - Protect an Endpoint](Task9.py)  
    Add token protection to create, update, and delete endpoints while keeping read endpoints public.
 
 10. **Task 10 - Test the Contract**  
@@ -82,3 +82,7 @@ Duplicate email:
   "detail": "Email already exists"
 }
 ```
+
+## Task 9 Check
+
+`GET /posts` and `GET /posts/{post_id}` are public. `POST`, `PUT`, and `DELETE` require the header `Authorization: Bearer secret-token`. Without the token, the API returns `401 Unauthorized`.
